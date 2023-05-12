@@ -7,9 +7,9 @@ let result;
 if((kilometriPercorsi * 0.21) + "€" == result){
     console.log((kilometriPercorsi * 0.21).toFixed(2))
 }
-// else if(isNAN (result)){
-//     alert("Inserisci un numero valido")
-// }
+else if(isNAN (result)){
+    alert("Inserisci un numero valido")
+}
 else{
 
 }
