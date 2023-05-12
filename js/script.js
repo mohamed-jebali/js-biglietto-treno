@@ -4,20 +4,25 @@ let result;
 
 
 
+if(isNaN(kilometriPercorsi) || isNaN (etaPasseggero)){
+    alert("Inserisci un numero Valido")
+    document.getElementById("output").innerHTML = "Inserisci un Numero Valido";
+}
+
+
+if(etaPasseggero > 65(result - ){}){
+    
+}
+
+if(etaPasseggero < 18 (result - ) ){
+    alert("sei minorenne")
+}
+
+
 if((kilometriPercorsi * 0.21) + "€" == result){
     console.log((kilometriPercorsi * 0.21).toFixed(2))
 }
-else if(isNAN (result)){
-    alert("Inserisci un numero valido")
-}
-else{
 
-}
-if (isNaN (etaPasseggero)) {
-    alert("Inserisci un numero valido")
-} else {
-    
-}
 
 
 document.getElementById("output").innerHTML = kilometriPercorsi + "€";
