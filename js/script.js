@@ -3,15 +3,13 @@ let etaPasseggero = parseInt(prompt("Inserisci la tua età"));
 let risultato = (kilometriPercorsi * 0.21);
 
 
-if(kilometriPercorsi === undefined){
+if((kilometriPercorsi) === undefined || (etaPasseggero) === undefined ){
     document.getElementById("output").innerHTML = "Inserisci Qualcosa";
 }
 else if(isNaN(kilometriPercorsi) || isNaN (etaPasseggero)){
     document.getElementById("output").innerHTML = "Inserisci un Numero Valido";
 }
-else{
-    document.getElementById("output").innerHTML = risultato.toFixed(2) + "€";
-}
+
 
 
 if(etaPasseggero < 18){
