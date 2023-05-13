@@ -4,10 +4,10 @@ let risultato = (kilometriPercorsi * 0.21);
 
 
 
-if(isNaN(kilometriPercorsi) || isNaN (etaPasseggero)){
+if (isNaN(kilometriPercorsi) || isNaN (etaPasseggero)){
     document.getElementById("output").innerHTML = "Inserisci un Numero o Valido";
 }
-else if((typeof kilometriPercorsi === undefined ) || (typeof etaPasseggero === undefined ) ) {
+else if(kilometriPercorsi == ""  || etaPasseggero == ""  ) {
     document.getElementById("output").innerHTML = "Inserisci Qualcosa";
 }
 else{
@@ -23,6 +23,10 @@ else{
     document.getElementById("output").innerHTML = risultato.toFixed(2) + "€";
 }
 }
+
+
+
+
 
 
 
