@@ -14,11 +14,11 @@ else if(isNaN(kilometriPercorsi) || isNaN (etaPasseggero)){
 
 if(etaPasseggero < 18){
  let PrezzoScontato = risultato - ((20 / 100) * risultato);
-    document.getElementById("output").innerHTML = PrezzoScontato.toFixed(2);
+    document.getElementById("output").innerHTML = PrezzoScontato.toFixed(2) + "€";
 }
 else if (etaPasseggero > 65) {
     let PrezzoScontato = risultato - ((40 / 100) * risultato);
-    document.getElementById("output").innerHTML = PrezzoScontato.toFixed(2);
+    document.getElementById("output").innerHTML = PrezzoScontato.toFixed(2) + "€";
 }
  else{
     document.getElementById("output").innerHTML = risultato.toFixed(2) + "€";
