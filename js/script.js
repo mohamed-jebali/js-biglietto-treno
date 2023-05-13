@@ -7,9 +7,9 @@ let risultato = (kilometriPercorsi * 0.21);
 if(isNaN(kilometriPercorsi) || isNaN (etaPasseggero)){
     document.getElementById("output").innerHTML = "Inserisci un Numero o Valido";
 }
-// else if(undefined (kilometriPercorsi )  || undefined (etaPasseggero)) {
-//     document.getElementById("output").innerHTML = "Inserisci Qualcosa";
-// }
+else if((typeof kilometriPercorsi === undefined ) || (typeof etaPasseggero === undefined ) ) {
+    document.getElementById("output").innerHTML = "Inserisci Qualcosa";
+}
 else{
 if (etaPasseggero < 18){
     let PrezzoScontato = risultato - ((20 / 100) * risultato);
